@@ -1,17 +1,17 @@
 <?php
 
 namespace lesson2;
-require_once 'BankAccount.php';
+
 class SavingsAccount extends BankAccount
 {
-    private float $perecent;
+    private float $percent;
     public function __construct(float $balance, float $percent) {
         parent::__construct($balance);
-        $this->perecent = $percent;
+        $this->percent = $percent;
     }
 
     public function applyInterest(): void {
-        $this->deposit(($this->perecent * $this->getBalance()) / 100);
+        $this->deposit(($this->percent * $this->getBalance()) / 100);
     }
 }
 

@@ -1,9 +1,7 @@
 <?php
 
 namespace lesson2;
-use Payable;
-
-require_once 'BankAccount.php';
+use lesson2\Payable;
 class CreditAccount extends BankAccount implements Payable
 {
     public function withdraw(float $amount): void

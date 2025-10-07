@@ -1,9 +1,7 @@
 <?php
 
 namespace lesson3;
-use Refuable;
-require_once 'Refuable.php';
-require_once 'Vehicle.php';
+use lesson3\Refuable;
 class Car extends Vehicle implements Refuable
 {
     public function move() : void {

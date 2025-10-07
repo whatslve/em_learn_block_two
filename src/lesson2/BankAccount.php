@@ -1,9 +1,7 @@
 <?php
 
 namespace lesson2;
-require_once 'Payable.php';
-use Payable;
-
+use lesson2\Payable;
 class BankAccount implements Payable
 {
     protected float $balance;

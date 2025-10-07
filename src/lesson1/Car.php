@@ -1,10 +1,7 @@
 <?php
 
 namespace lesson1;
-use Logger;
-
-require_once 'Movable.php';
-require_once 'Logger.php';
+use lesson1\Logger;
 
 class Car implements Movable
 {

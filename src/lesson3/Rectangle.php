@@ -1,10 +1,7 @@
 <?php
 
 namespace lesson3;
-use Drawable;
-
-require_once 'Shape.php';
-require_once 'Drawable.php';
+use lesson3\Drawable;
 class Rectangle extends Shape implements Drawable
 {
     private float $w;
@@ -20,6 +17,6 @@ class Rectangle extends Shape implements Drawable
     }
 
     public function draw() : void {
-        echo 'Рисую прямоугольник с шириной '. $this->w . ' высотой '. $this->h;
+        echo 'Рисую прямоугольник шириной '. $this->w . ' высотой '. $this->h;
     }
 }

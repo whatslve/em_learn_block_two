@@ -1,7 +1,6 @@
 <?php
 
 namespace lesson1;
-require_once('Car.php');
 
 class ElectricCar extends Car
 {

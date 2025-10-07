@@ -1,10 +1,7 @@
 <?php
 
 namespace lesson3;
-use Drawable;
-
-require_once 'Shape.php';
-require_once 'Drawable.php';
+use lesson3\Drawable;
 class Circle extends Shape implements Drawable
 {
     private float $r;
